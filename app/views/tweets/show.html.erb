@@ -58,6 +58,7 @@
   <div class="comment-wrapper">
     <div class="comment-show-box">
       <a>コメント一覧</a>
+      <% if @comments!=nil %>
       <% @comments.each do |c| %>
       <div>
         <%= c.user.name unless c.user.blank? %>
@@ -65,6 +66,7 @@
         <%= c.body %>
       </div>
       <br>
+      <% end %>
       <% end %>
     </div>
     <div class="comment-do-box">
