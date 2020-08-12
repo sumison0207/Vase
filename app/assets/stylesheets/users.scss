@@ -1,0 +1,65 @@
+// Place all the styles related to the users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+.signup-container{
+    margin: 50px auto;
+	width: 70%;
+	border: solid darkcyan;
+    border-radius: 10px;
+    text-align: center;
+}
+.signin-container{
+    margin: 50px auto;
+	width: 70%;
+	border: solid darkcyan;
+    border-radius: 10px;
+    text-align: center;
+}
+.my-container{
+    box-shadow: 0 10px 10px #666666;
+    margin: 50px auto;
+	width: 70%;
+	border: solid darkcyan;
+	border-radius: 10px;
+    flex-direction: row;
+}
+.me-box{
+    display: flex;
+    padding: 30px;
+}
+
+h2{
+    text-align: center;
+}
+
+.image-box{
+    text-align: center;
+    img {
+        border-radius: 50%;  /* 角丸半径を50%にする(=円形にする) */
+        width:  180px;       /* ※縦横を同値に */
+        height: 180px;       /* ※縦横を同値に */
+        width: 133px;
+        height: 133px;
+        left: 254px;
+        top: 127px;
+        
+        
+    }
+}
+
+.name-box{
+    width: 66px;
+    height: 40px;
+    left: 286px;
+    top: 267px;
+}
+
+.profile-box{
+    flex-grow: 3;
+    padding: 10px;
+    
+}
+.user-post-box{
+    display: flex;
+    text-align: center;
+}

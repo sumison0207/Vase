@@ -1,0 +1,68 @@
+<div class="my-container">
+  <div class="me-box">
+  <div class="page-title-box">
+    <h2>Your
+      <br>
+        Page
+    </h2>
+    
+  </div>
+  <div class="image-box">
+      <% if @user.image.present? %>
+      <%= image_tag @user.image_url, size: '200x200'  %>
+    <% else %>
+      <img src="/images/default.jpg" width="200px" height="200px">
+    <% end %> 
+    <p><%= @user.name %></p>
+  </div>
+
+
+  <div class="edit-box">
+    <% if current_user.id == @user.id %>
+    <%= link_to "編集する", edit_user_registration_path ,class: 'btn btn-info'%>
+    <% end %>
+  </div>
+  </div>
+  <div class="profile-box">
+    <h2>Your Profile<h2>
+    <br>
+    <a> <%= @user.profile %></a>
+  </div>
+  <div class="post-title-container">
+  <h2>Your Post</h2>
+  </div>
+  <div class="user-post-box">
+    
+  <% @user.tweets.each do |t| %>
+    <div class="tweet">
+        <a href="/users/<%= t.user.id %>"><%= t.user.name %></a>
+          <br>
+          <div class="tweet-image-box">
+          <% if t.image.present? %>
+            <%= image_tag t.image_url, size: '300x200'  %>
+            <% else %>
+            <img src="/images/default.jpg" width="200px" height="200px">
+          <% end %> 
+          
+
+          </div>
+          <div class="tweet-title-box">
+          <% if t.title.present? %>
+          <%= t.title %>
+          <% else %>
+          <a>タイトルなし</a>
+          <% end %>
+          </div>
+          
+          (✿<%= t.liked_users.count %>)
+          <%= link_to "詳細へ", tweet_path(t.id) ,class: 'btn btn-info'%>
+          <% if t.user.id == current_user.id %>
+          <%= link_to "編集", edit_tweet_path(t.id) , class: 'btn btn-info' %>
+          <%= button_to "削除", tweet_path(t.id), method: :delete , class: 'btn btn-info' %>
+          <% end %>
+        </div>
+  
+  <% end %>
+  </div>
+  <%= link_to "ホームに戻る", tweets_path, class: 'btn btn-info' %>
+</div>

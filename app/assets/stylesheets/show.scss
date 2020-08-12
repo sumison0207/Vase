@@ -1,0 +1,141 @@
+*{
+    padding: 0;
+    margin: 0;
+  }
+.show-tweet-container{
+    margin: 50px auto;
+	width: 70%;
+	border: solid darkcyan;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px #666666;
+}
+.tweet-top{
+    text-align: center;
+}
+.user-name-box{
+    font-size: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.tweet-title{
+    font-size: 40px;
+}
+
+.material-box{
+    margin: 50px auto;
+	width: 70%;
+	border: solid darkcyan;
+    border-radius: 10px;
+    text-align: center;
+}
+.tag-box{
+	margin: 50px auto;
+	width: 70%;
+	border: solid darkcyan;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.tweet-body-box{
+	margin: 50px auto;
+	width: 70%;
+	border: solid darkcyan;
+    border-radius: 10px;
+    text-align: center;
+}
+.like-box{
+	
+	margin: 50px auto;
+	width: 70%;
+	border: solid darkcyan;
+    border-radius: 10px;
+    text-align: center;
+}
+.comment-wrapper{
+	
+	margin: 50px auto;
+	width: 70%;
+	border: solid darkcyan;
+    border-radius: 10px;
+    text-align: center;
+}
+.comment-show-box{
+	margin-bottom: 100px;
+}
+.field {
+	position: relative;
+	width: 80%;
+	margin: 40px 3%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.field input[type='text'] {
+	font: 15px/24px sans-serif;
+	box-sizing: border-box;
+	width: 100%;
+	letter-spacing: 1px;
+	padding-left: 4em;
+}
+.field input[type='text']:focus {
+	outline: none;
+}
+.body {
+	padding: 4px 0;
+	border: 0;
+	border-bottom: 1px solid #1b2538;
+	background-color: transparent;
+}
+.body ~ .focus_line {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 0;
+	height: 2px;
+	transition: 0.4s;
+	background-color: darkcyan;
+}
+.body:focus ~ .focus_line,
+.field.body ~ .focus_line {
+	width: 100%;
+	transition: 0.4s;
+}
+.body ~ label {
+	position: absolute;
+	z-index: -1;
+	top: 4px;
+	left: 0;
+	width: 100%;
+	transition: 0.3s;
+	letter-spacing: 0.5px;
+	color: #aaaaaa;
+}
+.body:focus ~ label, .field.body ~ label {
+	font-size: 12px;
+	top: -16px;
+	transition: 0.3s;
+	color: darkcyan;
+}
+
+.post input[type="submit"] {
+    display       : inline-block;
+  border-radius : 5%;          /* 角丸       */
+  font-size     : 14pt;        /* 文字サイズ */
+  text-align    : center;      /* 文字位置   */
+  cursor        : pointer;     /* カーソル   */
+  padding       : 12px 12px;   /* 余白       */
+  background    : darkcyan;     /* 背景色     */
+  color         : white;     /* 文字色     */
+  line-height   : 1em;         /* 1行の高さ  */
+  transition    : .3s;         /* なめらか変化 */
+  box-shadow    : 6px 6px 3px #666666;  /* 影の設定 */
+  border        : 2px solid #00c580;    /* 枠の指定 */
+  }
+  
+  .post input[type="submit"]:hover {
+    box-shadow    : none;        /* カーソル時の影消去 */
+  color         : darkcyan;     /* 背景色     */
+  background    : white;     /* 文字色     */
+}
+  
+.tweet-info-box{
+	display: flex;
+}

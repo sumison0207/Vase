@@ -1,0 +1,27 @@
+<h3>編集ページ</h3>
+<%= form_for @tweet do |f| %>
+  <div class="edit-container">
+    <div class="field">
+        <%= f.text_field :title, :size => 140 , class: 'title'  %>
+        <label>タイトル</label>
+        <span class="focus_line"></span>
+    </div>
+
+    
+    <div class="field">
+        <%= f.text_field :material, :size => 140, class:'material' %>
+        <label>花材</label>
+        <span class="focus_line"></span>
+    </div>
+
+    <div class="field">
+        <%= f.text_field :body, :size => 140, class:'body' %>
+        <label>紹介文</label>
+        <span class="focus_line"></span>
+    </div>
+    <div class="edit">
+        <%= f.submit "編集する" %>
+    </div>
+  </div>
+<% end %>
+<%= link_to "ホームに戻る", tweets_path, class: 'btn btn-info' %>

@@ -1,0 +1,437 @@
+// Place all the styles related to the tweets controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+*{
+  padding: 0;
+  margin: 0;
+}
+
+.top_image-container{
+	background-image: url(top-image.jpg);
+	background-size: cover;
+	width: 100%;
+	height: 900px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	 
+}
+
+.sub-container{
+	width: 1258px;
+	height: 192px;
+	left: 0px;
+	top: 193px;
+	  margin-left: 180px;
+	  margin-top: 10px;
+	
+	background:rgba(236, 250, 244, 0.49);
+}
+
+p{
+	font-family: "Cambria";
+	font-size: 65px;
+	display: table-cell;
+  	vertical-align: middle;
+	text-align: center;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+.scroll{
+	height: 230px;
+	color: black;
+	width: 100%;
+}
+
+.cp_arrows *, .cp_arrows *:before, .cp_arrows *:after {
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+.cp_arrows {
+	position: relative;
+	display: flex;
+	height: 300px;/*画面いっぱいにする場合100vh*/
+	margin: 2em auto;
+	justify-content: center;
+	align-items: center;
+}
+.cp_arrows .cp_arrow {
+	position: absolute;
+	top: 50%;/*着地点（サンプルは[class:cp_arrows]height300pxの50%）*/
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
+	-webkit-transform-origin: 50% 50%;
+	        transform-origin: 50% 50%;
+	opacity: 0;
+}
+.cp_arrows .cp_arrowfirst {
+	-webkit-animation: arrow-move08 2s ease-in-out infinite;
+	        animation: arrow-move08 2s ease-in-out infinite;
+}
+.cp_arrows .cp_arrowsecond {
+	-webkit-animation: arrow-move08 2s 1s ease-in-out infinite;
+	        animation: arrow-move08 2s 1s ease-in-out infinite;
+}
+.cp_arrows .cp_arrow:before, .cp_arrows .cp_arrow:after {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	width: 30px;
+	height: 3px;
+	content: '';
+	background: darkcyan;
+}
+.cp_arrows .cp_arrow:before {
+	-webkit-transform: rotate(30deg) translateX(-39%);
+	        transform: rotate(30deg) translateX(-39%);
+	-webkit-transform-origin: top left;
+	        transform-origin: top left;
+}
+.cp_arrows .cp_arrow:after {
+	-webkit-transform: rotate(-30deg) translateX(39%);
+	        transform: rotate(-30deg) translateX(39%);
+	-webkit-transform-origin: top right;
+	        transform-origin: top right;
+}
+@-webkit-keyframes arrow-move08 {
+	0% {
+		top: 40%;/*スタート地点（サンプルは[class:cp_arrows]height300pxの35%）*/
+		opacity: 0;
+	}
+	70% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+@keyframes arrow-move08 {
+	0% {
+		top: 40%;/*スタート地点（サンプルは[class:cp_arrows]height300pxの35%）*/
+		opacity: 0;
+	}
+	70% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+h2{
+	margin-left: auto;
+	margin-right: auto;
+	font-family: "Cambria";
+	font-size: 40px;
+	
+}
+
+.fixed-bg {
+	height: 500px;
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+	display: flex;
+    align-items: center;
+    justify-content: center
+  }
+
+  
+ .fixed-bg-content h2 {
+    font-family: "Cambria";
+	font-size: 80px;
+	
+}
+
+
+.scroll-bg{
+	height: 500px;
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bg-color02{
+	height: 500px;
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+
+#scroll-bg-content {
+	
+    width: 90%;
+    max-width: 768px;
+	
+	text-align: center;
+}
+#scroll-bg-content p {
+	
+    font-size: 1.2rem;
+    font-weight: normal;
+	line-height: 1.8;
+	text-align: center;
+	background-color:  rgba(81, 154, 123, 0.37);
+	padding: 20px;
+}
+
+  .bg01 {
+	margin-top: 5px;
+	background-image: url(reef_1.png);
+	opacity: 0.5;
+  }
+   
+  .bg02 {
+	background-image: url(white_1.png);
+	opacity: 0.5;
+  }
+
+  .bg03 {
+	background-image: url(reef2.png);
+	opacity: 0.5;
+  }
+  .bg04{
+	background-image: url(himawari.png);
+	opacity: 0.5;
+  }
+
+.bg-color04{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-around;
+	text-align: center;
+	width: 100vw;
+	height: 820px;
+}
+
+#page-box{
+	display: flex;
+	text-align: center;
+	margin-left: 45%;
+	margin-right: 45%;
+}
+.tweet{
+	text-align: center;
+	margin: 10px;
+	
+	width: 30%;
+	margin:2em 0;
+    position: relative;
+    padding: 0.25em 1em;
+    border: solid 2px black;
+    border-radius: 3px 0 3px 0;
+}
+
+.tweet:before,.tweet:after
+{
+    content: '';
+    position: absolute;
+    width:10px;
+    height: 10px;
+    border: solid 2px black;
+    border-radius: 50%;
+}
+.tweet:after {
+    top:-12px;
+    left:-12px;
+}
+.tweet:before {
+    bottom:-12px;
+    right:-12px;
+}
+.tweet p {
+    margin: 0; 
+    padding: 0;
+}
+.tweet-image-box{
+	margin: 5px;
+}
+.tweet-info-item{
+	display: flex;
+	justify-content: center;
+}
+
+.page-info-container{
+	position: relative;
+}
+
+.tweets-container{
+	background-color: #dfdfdf;
+	display: flex;
+	
+	height: 800px;
+	margin: 50px;
+	margin-top: 200px;
+}
+
+
+.post-container {
+	margin: 50px auto;
+	width: 70%;
+	border: solid darkcyan;
+	border-radius: 10px;
+	text-align: center;
+  }
+
+.field {
+	position: relative;
+	width: 80%;
+	margin: 40px 3%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.field input[type='text'] {
+	font: 15px/24px sans-serif;
+	box-sizing: border-box;
+	width: 100%;
+	letter-spacing: 1px;
+	padding-left: 4em;
+}
+.field input[type='text']:focus {
+	outline: none;
+}
+.title {
+	padding: 4px 0;
+	border: 0;
+	border-bottom: 1px solid #1b2538;
+	background-color: transparent;
+}
+.title ~ .focus_line {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 0;
+	height: 2px;
+	transition: 0.4s;
+	background-color: darkcyan;
+}
+.title:focus ~ .focus_line,
+.field.title ~ .focus_line {
+	width: 100%;
+	transition: 0.4s;
+}
+.title ~ label {
+	position: absolute;
+	z-index: -1;
+	top: 4px;
+	left: 0;
+	width: 100%;
+	transition: 0.3s;
+	letter-spacing: 0.5px;
+	color: #aaaaaa;
+}
+.title:focus ~ label, .field.title ~ label {
+	font-size: 12px;
+	top: -16px;
+	transition: 0.3s;
+	color: darkcyan;
+}
+
+.material {
+	padding: 4px 0;
+	border: 0;
+	border-bottom: 1px solid #1b2538;
+	background-color: transparent;
+}
+.material ~ .focus_line {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 0;
+	height: 2px;
+	transition: 0.4s;
+	background-color: darkcyan;
+}
+.material:focus ~ .focus_line,
+.field.material ~ .focus_line {
+	width: 100%;
+	transition: 0.4s;
+}
+.material ~ label {
+	position: absolute;
+	z-index: -1;
+	top: 4px;
+	left: 0;
+	width: 100%;
+	transition: 0.3s;
+	letter-spacing: 0.5px;
+	color: #aaaaaa;
+}
+.material:focus ~ label, .field.material ~ label {
+	font-size: 12px;
+	top: -16px;
+	transition: 0.3s;
+	color: darkcyan;
+}
+
+.body {
+	padding: 4px 0;
+	border: 0;
+	border-bottom: 1px solid #1b2538;
+	background-color: transparent;
+}
+.body ~ .focus_line {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 0;
+	height: 2px;
+	transition: 0.4s;
+	background-color: darkcyan;
+}
+.body:focus ~ .focus_line,
+.field.body ~ .focus_line {
+	width: 100%;
+	transition: 0.4s;
+}
+.body ~ label {
+	position: absolute;
+	z-index: -1;
+	top: 4px;
+	left: 0;
+	width: 100%;
+	transition: 0.3s;
+	letter-spacing: 0.5px;
+	color: #aaaaaa;
+}
+.body:focus ~ label, .field.body ~ label {
+	font-size: 12px;
+	top: -16px;
+	transition: 0.3s;
+	color: darkcyan;
+}
+.page-info-container{
+	display: flex;
+	justify-content: center;
+}
+.post input[type="submit"] {
+	display       : inline-block;
+	border-radius : 5%;          /* 角丸       */
+	font-size     : 18pt;        /* 文字サイズ */
+	text-align    : center;      /* 文字位置   */
+	cursor        : pointer;     /* カーソル   */
+	padding       : 12px 12px;   /* 余白       */
+	background    : darkcyan;     /* 背景色     */
+	color         : #000000;     /* 文字色     */
+	line-height   : 1em;         /* 1行の高さ  */
+	opacity       : 1;           /* 透明度     */
+  transition    : .3s;         /* なめらか変化 */
+  box-shadow    : 6px 6px 3px #666666;  /* 影の設定 */
+  }
+  
+  .post input[type="submit"]:hover {
+	box-shadow    : none;        /* カーソル時の影消去 */
+  opacity       : 0.8;         /* カーソル時透明度 */
+  }

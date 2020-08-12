@@ -1,0 +1,160 @@
+*{
+    padding: 0;
+    margin: 0;
+  }
+.edit-container {
+	margin: 50px auto;
+	width: 70%;
+	border: solid darkcyan;
+	border-radius: 10px;
+    text-align: center;
+    
+  }
+
+.field {
+	position: relative;
+	width: 80%;
+	margin: 40px 3%;
+	margin-left: auto;
+	margin-right: auto;
+   
+}
+.field input[type='text'] {
+	font: 15px/24px sans-serif;
+	box-sizing: border-box;
+	width: 100%;
+	letter-spacing: 1px;
+	padding-left: 4em;
+}
+.field input[type='text']:focus {
+	outline: none;
+}
+.title {
+	padding: 4px 0;
+	border: 0;
+	border-bottom: 1px solid #1b2538;
+	background-color: transparent;
+}
+.title ~ .focus_line {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 0;
+	height: 2px;
+	transition: 0.4s;
+	background-color: darkcyan;
+}
+.title:focus ~ .focus_line,
+.field.title ~ .focus_line {
+	width: 100%;
+	transition: 0.4s;
+}
+.title ~ label {
+	position: absolute;
+	z-index: -1;
+	top: 4px;
+	left: 0;
+	width: 100%;
+	transition: 0.3s;
+	letter-spacing: 0.5px;
+	color: #aaaaaa;
+}
+.title:focus ~ label, .field.title ~ label {
+	font-size: 12px;
+	top: -16px;
+	transition: 0.3s;
+	color: darkcyan;
+}
+
+.material {
+	padding: 4px 0;
+	border: 0;
+	border-bottom: 1px solid #1b2538;
+	background-color: transparent;
+}
+.material ~ .focus_line {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 0;
+	height: 2px;
+	transition: 0.4s;
+	background-color: darkcyan;
+}
+.material:focus ~ .focus_line,
+.field.material ~ .focus_line {
+	width: 100%;
+	transition: 0.4s;
+}
+.material ~ label {
+	position: absolute;
+	z-index: -1;
+	top: 4px;
+	left: 0;
+	width: 100%;
+	transition: 0.3s;
+	letter-spacing: 0.5px;
+	color: #aaaaaa;
+}
+.material:focus ~ label, .field.material ~ label {
+	font-size: 12px;
+	top: -16px;
+	transition: 0.3s;
+	color: darkcyan;
+}
+
+.body {
+	padding: 4px 0;
+	border: 0;
+	border-bottom: 1px solid #1b2538;
+	background-color: transparent;
+}
+.body ~ .focus_line {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 0;
+	height: 2px;
+	transition: 0.4s;
+	background-color: darkcyan;
+}
+.body:focus ~ .focus_line,
+.field.body ~ .focus_line {
+	width: 100%;
+	transition: 0.4s;
+}
+.body ~ label {
+	position: absolute;
+	z-index: -1;
+	top: 4px;
+	left: 0;
+	width: 100%;
+	transition: 0.3s;
+	letter-spacing: 0.5px;
+	color: #aaaaaa;
+}
+.body:focus ~ label, .field.body ~ label {
+	font-size: 12px;
+	top: -16px;
+	transition: 0.3s;
+	color: darkcyan;
+}
+
+.edit input[type="submit"] {
+  display: inline-block;
+  text-decoration: none;
+  background: darkcyan;
+  color: #FFF;
+  width: 120px;
+  height: 120px;
+  line-height: 120px;
+  border-radius: 50%;
+  text-align: center;
+  overflow: hidden;
+  transition: .4s;
+  justify-content: center;
+}
+
+.edit input[type="submit"]:hover {
+  background: darkslategrey;
+}

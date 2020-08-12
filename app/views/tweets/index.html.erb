@@ -1,0 +1,153 @@
+
+
+<div class="top_image-container">
+<div class="sub-container">
+  <p>Vase</p>
+</div>
+  <div class="top-container">
+    <%= link_to "ログインはこちら", tweets_path ,class: 'btn btn-info' %>
+    <%= link_to "新規登録はこちら", new_user_registration_path ,class: 'btn btn-info' %>
+  </div>
+</div>
+
+<div class="scroll">
+<div class="cp_arrows">
+  <h2>Scroll</h2>
+  <div class="cp_arrow cp_arrowfirst"></div>
+  <div class="cp_arrow cp_arrowsecond"></div>
+</div>
+</div>
+
+
+
+<div class="fixed-bg bg01">
+<div class="fixed-bg-content">
+  <h2>About Vase</h2>
+</div>
+
+</div>
+
+<div class="scroll-bg bg-color01">
+<div id="scroll-bg-content">
+  <p>Vaseとは誰でも気軽にお花に関する情報を共有できるサイトです。
+  <br>
+  はじめは難しいと感じるかもしれませんが、飾り方、管理の仕方などコメントで聞いてみましょう。
+  <br>
+  ほかの人の作品も参考になるかもしれません。
+  <br>
+  当サイト管理人おすすめのお花や飾り方、作品も紹介しているのでぜひご覧ください！
+  <br>
+  </p>
+  <%= link_to "About more", hello_link_path , :controller => "hello", :action => "link" ,class: 'btn btn-info' %>
+  
+</div>
+</div>
+
+<div class="fixed-bg bg02">
+<div class="fixed-bg-content">
+  <h2>Article</h2>
+</div>
+</div>
+
+<div class="scroll-bg bg-color02">
+<div id="scroll-bg-content">
+  <p>コチラでは定期的に更新されている記事を読むことができます。
+  <br>
+  季節のおすすめのお花、いいねの多かった作品の紹介などをしています。
+  <br>
+  
+  </p>
+  <%= link_to "記事はコチラ", hello_show_path , :controller => "hello", :action => "show" ,class: 'btn btn-info' %>
+</div>
+</div>
+
+<div class="fixed-bg bg03">
+<div class="fixed-bg-content">
+  <h2>Seasonal Flower</h2>
+</div>
+</div>
+
+<div class="scroll-bg bg-color03">
+<div id="scroll-bg-content">
+  <p>コチラのページでは、それぞれの季節ごとの作品を見ることができます。
+  </p>
+  <div class="season-container">
+  <div class="spring-box">
+    <%= link_to image_tag('spring.jpg', :size => '120x100'), hello_spring_path(:tag_id => 1), method: :get %>
+    <div class="spring-title">Spring</div>
+    </div>
+  <div class="summer-box">
+    <%= link_to image_tag('summer.jpg', :size => '120x100'), hello_spring_path(:tag_id => 2), method: :get %>
+    <div class="spring-title">Summer</div>
+    </div>
+  <div class="autumn-box">
+    <%= link_to image_tag('autumn.jpg', :size => '120x100'), hello_spring_path(:tag_id => 3), method: :get  %>
+    <div class="spring-title">Autumn</div>
+    </div>
+  <div class="winter-box">
+  <%= link_to image_tag('winter.jpg', :size => '120x100'), hello_spring_path(:tag_id => 4), method: :get  %>
+  <div class="spring-title">Winter</div>
+  </div>
+</div>
+  </div>
+  
+</div>
+
+<div class="fixed-bg bg04">
+<div class="fixed-bg-content">
+  <h2>Collection</h2>
+</div>
+</div>
+
+
+<div class="scroll-bg-content">
+ 
+  <div class="scroll-bg bg-color04">
+    <div id="page-box">
+      <%= page_entries_info @tweets %>
+    </div>
+  
+      <% @tweets.each do |t| %>
+  
+        <div class="tweet">
+            <a href="/users/<%= t.user.id %>"><%= t.user.name %></a>
+            <br>
+            <div class="tweet-image-box">
+              <% if t.image.present? %>
+              <%= link_to tweet_path(t.id) do %>
+                <%= image_tag t.image_url, size: '300x200'  %>
+              <% end %>
+              <% else %>
+              <%= link_to tweet_path(t.id) do %>
+                <img src="/images/default.jpg" width="200px" height="200px">
+              <% end %>
+              <% end %> 
+            </div>
+            <div class="tweet-title-box">
+              <% if t.title.present? %>
+              <%= t.title %>
+              <% else %>
+              <a>タイトルなし</a>
+              <% end %>
+            </div>
+            <div class="tweet-info-item">
+              ✿<%= t.liked_users.count %>
+              <%= link_to "詳細へ", tweet_path(t.id) ,class: 'btn btn-info'%>
+              
+            </div>
+        </div>
+      <% end %>
+  </div>
+</div>
+<div id="page-box">
+<%= paginate @tweets %>
+</div>
+
+
+
+
+
+
+
+
+

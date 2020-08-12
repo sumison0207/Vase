@@ -1,0 +1,62 @@
+
+.wrapper{
+    width:100%;
+    background-image:url(seaon.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position: center center;
+    
+}
+.wrapper .season-top-container{
+    height: 100%;
+  background: rgba(255,255,255,0.6);
+}
+.wrapper .container{
+    max-width:1000px;
+    margin:0px auto;
+    padding:80px 0px;
+    
+}
+/* content */
+.wrapper .content .heading{
+    margin:0px 0px 40px 0px;
+    color:black;
+    font-size: 70px;
+    font-weight: normal;
+    text-align: center;
+    font-family: serif;
+}
+@media (min-width: 992px) {
+    .wrapper .content .list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.wrapper .content .list-item {
+    padding:30px;
+    line-height:1.8rem;
+    color:black;
+    text-align:center;
+    font-family: serif;
+}
+@media (min-width: 992px) {
+    .wrapper .content .list-item {
+        width:50%;
+    }
+}
+.season-tweet-container{
+    margin: 50px auto;
+	width: 70%;
+	border: solid darkcyan;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px #666666;
+    display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-around;
+	text-align: center;
+	width: 70vw;
+	
+}
