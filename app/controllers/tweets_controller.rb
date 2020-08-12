@@ -35,7 +35,8 @@
         @tweet = Tweet.find(params[:id])
         @like = Like.new
         @comments = @tweet.comments
-        @comment = Comment.new
+        #@comment = Comment.new
+        @comment = @tweet.comments.build
       end
   
       def edit
