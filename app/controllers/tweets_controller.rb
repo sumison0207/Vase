@@ -13,7 +13,7 @@
           end
         end
   
-      
+        
   
       def new
           @tweet = Tweet.new
