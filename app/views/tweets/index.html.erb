@@ -142,6 +142,9 @@
 <div id="page-box">
 <%= paginate @tweets %>
 </div>
+<%= link_to 'ログアウト', destroy_user_session_path, method: :delete %>
+  <br>
+  <%= link_to "マイページ", users_show_path %>
 
 
 

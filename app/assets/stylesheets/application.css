@@ -33,10 +33,12 @@
   header {
     background-color: white;
     height: 80px;
+    width: 100vw;
     font-weight: bold;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
   }
   
   header a {
@@ -110,4 +112,16 @@
   /*ホバー時のデザイン*/
   .pagination>li>a:hover {        
     border-radius: 15px;    /*角を丸くする*/
+  }
+
+  footer {
+    color: white;
+    height: 30px;
+    background-color: #000;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    
   }
