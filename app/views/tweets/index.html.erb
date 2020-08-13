@@ -31,6 +31,10 @@
               <%= link_to "My page", user_path(current_user.id) , :controller => "hello", :action => "show" ,class: 'btn btn-outline-danger' %>
             
               </div>
+              <div class="mypage-box">
+              <%= link_to "Log out", destroy_user_session_path, method: :delete ,class: 'btn btn-outline-danger' %>
+            
+              </div>
           </div>
           <div class="season-menu-container">
             <div class="spring-box">
@@ -61,6 +65,7 @@
 <div class="scroll-bg-content">
  
   <div class="scroll-bg bg-color04">
+          
     <div id="page-box">
       <%= page_entries_info @tweets %>
     </div>
@@ -103,10 +108,7 @@
 <div id="page-box">
 <%= paginate @tweets %>
 </div>
-<%= link_to 'ログアウト', destroy_user_session_path, method: :delete %>
-  <br>
-  <%= link_to "マイページ", users_show_path %>
-  <%= link_to "マイページへ", user_path(current_user.id) %>
+
 
 
 <%= javascript_pack_tag 'tweets/index' %>
