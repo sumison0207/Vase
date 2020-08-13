@@ -1,0 +1,47 @@
+<%= link_to "ホームに戻る", hello_index_path, class: 'btn btn-info' %>
+<section class="wrapper-a">
+    <div class="link-container">
+    <div class="container-a">
+        <div class="content-a">
+            <h2 class="heading-a">Vaseの使い方</h2>
+            <div class="list-a">
+                <div class="list-item-a">コチラのページではVaseの使用方法について書いてあります。初めての方はこのページを参考にまずはアカウント作成をしてみましょう。</div>
+                
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+<div class="how-menu-container">
+<%= link_to "トップページ", hello_link_path , :controller => "hello", :action => "link" ,class: 'btn btn-outline-danger' %>
+<%= link_to "新規登録方法", hello_log_path , :controller => "hello", :action => "log" ,class: 'btn btn-outline-danger' %>
+<%= link_to "投稿を見る、する", hello_post_path , :controller => "hello", :action => "post" ,class: 'btn btn-outline-danger' %>
+<%= link_to "マイページ", hello_my_path , :controller => "hello", :action => "my" ,class: 'btn btn-outline-danger' %>
+</div>
+<div class="box27">
+    <span class="box-title">新規登録方法</span>
+    会員登録の方法を説明します。
+    <div class="how-to-container">
+        <div class="how-img-box">
+            <%= image_tag('sign-up.PNG', :size => '400x250') %>
+        </div>
+        <div class="how-script-box">
+            トップページにある「新規登録はこちら」をクリックしてください。
+            <br>
+            ※新規登録を行った後は上のログインボタンからログインしてください。
+            
+        </div>
+    </div>
+    <div class="how-to-container">
+        <div class="how-img-box">
+            <%= image_tag('sign-up-show.PNG', :size => '400x250') %>
+        </div>
+        <div class="how-script-box">
+            「新規会員登録はこちら」をクリックすると、必要項目の入力フォームが表示されます。
+            <br>
+            登録したい名前（ほかのユーザーにも公開されます。）、メールアドレス、パスワード（ほかのユーザーには公開されません）を順番に入力し、「Signup」をクリックすれば完了です。
+            
+        </div>
+    </div>
+    
+</div>

@@ -6,6 +6,9 @@ Rails.application.routes.draw do
   get 'hello/index' => 'hello#index'
   get 'hello/show' => 'hello#show'
   get 'hello/link' => 'hello#link'
+  get 'hello/log' => 'hello#log'
+  get 'hello/post' => 'hello#post'
+  get 'hello/my' => 'hello#my'
 
   
 

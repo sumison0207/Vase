@@ -1,0 +1,58 @@
+<%= link_to "ホームに戻る", hello_index_path, class: 'btn btn-info' %>
+<section class="wrapper-a">
+    <div class="link-container">
+    <div class="container-a">
+        <div class="content-a">
+            <h2 class="heading-a">Vaseの使い方</h2>
+            <div class="list-a">
+                <div class="list-item-a">コチラのページではVaseの使用方法について書いてあります。初めての方はこのページを参考にまずはアカウント作成をしてみましょう。</div>
+                
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+<div class="how-menu-container">
+<%= link_to "トップページ", hello_link_path , :controller => "hello", :action => "link" ,class: 'btn btn-outline-danger' %>
+<%= link_to "新規登録方法", hello_log_path , :controller => "hello", :action => "log" ,class: 'btn btn-outline-danger' %>
+<%= link_to "投稿を見る、する", hello_post_path , :controller => "hello", :action => "post" ,class: 'btn btn-outline-danger' %>
+<%= link_to "マイページ", hello_my_path , :controller => "hello", :action => "my" ,class: 'btn btn-outline-danger' %>
+</div>
+<div class="box27">
+    <span class="box-title">投稿を見る、する</span>
+    投稿はトップページでもログイン後ホーム画面でも見ることができます。（トップページから作品の詳細を見ることはできません。）
+    <div class="how-to-container">
+        <div class="how-img-box">
+            <%= image_tag('top-page.PNG', :size => '400x250') %>
+        </div>
+        <div class="how-script-box">
+            ログイン後のホーム画面からどの機能もご利用いただけます。
+            <br>
+            ・検索フォーム・・・フリーワードを入力して該当作品を探すことができます。
+            <br>
+            ・Postボタン・・・新規投稿フォームに移ることができます。
+            <br>
+            ・季節アイコン・・・それぞれの季節ごとの作品一覧を見ることができます。
+        </div>
+    </div>
+    <div class="how-to-container">
+        <div class="how-img-box">
+            <%= image_tag('new-post.PNG', :size => '400x250') %>
+        </div>
+        <div class="how-script-box">
+            投稿フォーム画面では自分の作品情報を入力して自分の作品を最大限にアピールしましょう。
+            <br>
+            ・タイトル・・・見る人を惹きつける作品のイメージにあったタイトルを考えてみましょう。
+            <br>
+            ・画像・・・一番大切な作品の写真！なるべくシンプルな背景できれいに撮ってみましょう。
+            <br>
+            ・花材・・・なんのお花を使ったのか書いてみましょう。
+            <br>
+            ・タグ・・・どの季節のお花を使用したのか選択してください。
+            <br>
+            ・紹介文・・・特に決まりはありませんが、どのように生けたのか、作品のアピールポイントなどを書いてみましょう。
+            <br>
+            最後に「投稿する」ボタンをクリックして完了です！
+        </div>
+    </div>
+</div>

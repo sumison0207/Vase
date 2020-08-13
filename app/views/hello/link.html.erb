@@ -13,25 +13,60 @@
     </div>
     </div>
 </section>
-<div class="box27-container">
+<div class="how-menu-container">
+<%= link_to "トップページ", hello_link_path , :controller => "hello", :action => "link" ,class: 'btn btn-outline-danger' %>
+<%= link_to "新規登録方法", hello_log_path , :controller => "hello", :action => "log" ,class: 'btn btn-outline-danger' %>
+<%= link_to "投稿を見る、する", hello_post_path , :controller => "hello", :action => "post" ,class: 'btn btn-outline-danger' %>
+<%= link_to "マイページ", hello_my_path , :controller => "hello", :action => "my" ,class: 'btn btn-outline-danger' %>
+</div>
+
 <div class="box27">
     <span class="box-title">トップページ</span>
-    <p>トップページ</p>
+    Vaseはトップページでいくつかの機能をご利用いただけます。
+    <div class="how-to-container">
+        <div class="how-img-box">
+            <%= image_tag('about-vase.jpg', :size => '400x250') %>
+        </div>
+        <div class="how-script-box">
+            このページのことです。初めての方でも簡単に使用方法がわかるよう丁寧に説明しております。
+            <br>
+            Vaseは会員登録をしなくても利用できますが、登録をするとより一層このサービスを楽しめます。
+            このページの説明をもとにさっそく会員登録をしてみましょう。
+        </div>
+    </div>
+    <div class="how-to-container">
+        <div class="how-img-box">
+            <%= image_tag('article 2.jpg', :size => '400x250') %>
+        </div>
+        <div class="how-script-box">
+            コチラのページでは定期的に更新されるお花に関する情報記事を読むことができます。
+            <br>
+            もし、自分の投稿作品のいいね数が多いと記事内で紹介される可能性が…！？
+            未経験の方もこのサービスのいたるところにあるお花の情報で素敵なお花ライフを始めてみましょう✿
+        </div>
+    </div>
+    <div class="how-to-container">
+        <div class="how-img-box">
+            <%= image_tag('seasonal2.jpg', :size => '400x250') %>
+        </div>
+        <div class="how-script-box">
+            Vaseは作品投稿の際にお花の季節をタグ付けして投稿することができます。
+            <br>
+            このセクションにある季節アイコンをクリックすると、季節ごとの投稿作品を見ることができます。
+            今の季節にはどんなお花があるのか、どんな飾り方がぴったりなのか見てみましょう。
+            <%= image_tag('seasonal-show.jpg', :size => '200x100') %>
+        </div>
+    </div>
+    <div class="how-to-container">
+        <div class="how-img-box">
+            <%= image_tag('collection.jpg', :size => '400x250') %>
+        </div>
+        <div class="how-script-box">
+            ここではほかの人の作品一覧を見ることができます。
+            <br>
+            ※詳細を見るにはログインが必要です。
+        </div>
+    </div>
 </div>
-<div class="box27">
-    <span class="box-title">新規登録方法</span>
-    <p>新規登録方法</p>
-</div>
-<div class="box27">
-    <span class="box-title">投稿を見る</span>
-    <p>投稿を見る</p>
-</div>
-<div class="box27">
-    <span class="box-title">投稿をする</span>
-    <p>投稿をする</p>
-</div>
-<div class="box27">
-    <span class="box-title">マイページ</span>
-    <p>マイページ</p>
-</div>
-</div>
+
+

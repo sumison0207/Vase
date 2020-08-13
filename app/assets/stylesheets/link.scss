@@ -47,6 +47,13 @@
     background-color: white;
     border: double 5px #4ec4d3;
 }
+
+.how-menu-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
 .box27-container{
     border: black;
 }
@@ -76,4 +83,17 @@
 .box27 p {
     margin: 0; 
     padding: 0;
+}
+.how-img-box{
+    
+    height: 300px;
+    width: 400px;
+}
+.how-script-box{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.how-to-container{
+    display: flex;
+    align-items: center;
 }

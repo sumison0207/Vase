@@ -2,7 +2,14 @@ class HelloController < ApplicationController
     
     def link
     end
+    def log
+    end
+    def post
+    end
+    def my
+    end
     def index
+        
 
         
         if params[:search] == nil

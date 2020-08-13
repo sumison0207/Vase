@@ -55,7 +55,34 @@
       <% end %>
     </div>
   </div>
-  
+  <div class="comment-wrapper">
+    <div class="comment-show-box">
+      <a>コメント一覧</a>
+      <% if @comments!=nil %>
+      <% @comments.each do |c| %>
+      <div>
+        <%= c.user.name unless c.user.blank? %>
+        <br>
+        <%= c.body %>
+      </div>
+      <br>
+      <% end %>
+      <% end %>
+    </div>
+    <div class="comment-do-box">
+      <% if user_signed_in? %>
+      <%= form_for [@tweet, @comment] do |f| %>
+      <div class="field">
+        <%= f.text_field :body, :size => 140 , class: 'body'  %>
+        <span class="focus_line"></span>
+        <label>コメント</label>
+      
+        <div class="post">
+          <%= f.submit 'コメントする' %>
+        </div>
+      <% end %>
+      <% end %>
+    </div>
   
   
 </div>

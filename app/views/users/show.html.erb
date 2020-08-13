@@ -37,23 +37,26 @@
     </div>
     <% @user.tweets.each do |t| %>
       <div class="tweet">
-        <a href="/users/<%= t.user.id %>"><%= t.user.name %></a>
-          <br>
-          <div class="tweet-image-box">
-            <% if t.image.present? %>
-              <%= image_tag t.image_url, size: '300x200'  %>
+            <a href="/users/<%= t.user.id %>"><%= t.user.name %></a>
+            <br>
+            <div class="tweet-image-box">
+              <% if t.image.present? %>
+              <%= link_to tweet_path(t.id) do %>
+                <%= image_tag t.image_url, size: '300x200'  %>
+              <% end %>
               <% else %>
-              <img src="/images/default.jpg" width="200px" height="200px">
-            <% end %> 
-          </div>
-
-          <div class="tweet-title-box">
-            <% if t.title.present? %>
-            <%= t.title %>
-            <% else %>
-            <a>タイトルなし</a>
-            <% end %>
-          </div>
+              <%= link_to tweet_path(t.id) do %>
+                <img src="/images/default.jpg" width="200px" height="200px">
+              <% end %>
+              <% end %> 
+            </div>
+            <div class="tweet-title-box">
+              <% if t.title.present? %>
+              <%= t.title %>
+              <% else %>
+              <a>タイトルなし</a>
+              <% end %>
+            </div>
           
           <div class="tweet-info-item">
               ✿<%= t.liked_users.count %>
