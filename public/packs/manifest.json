@@ -9,6 +9,16 @@
       "js.map": [
         "/packs/js/application-9afcbb5693aa87623e69.js.map"
       ]
+    },
+    "tweets\\index": {
+      "js": [
+        "/packs/js/tweets/index-618af288dc79515fde5d.js"
+      ],
+      "js.map": [
+        "/packs/js/tweets/index-618af288dc79515fde5d.js.map"
+      ]
     }
-  }
+  },
+  "tweets/index.js": "/packs/js/tweets/index-618af288dc79515fde5d.js",
+  "tweets/index.js.map": "/packs/js/tweets/index-618af288dc79515fde5d.js.map"
 }
