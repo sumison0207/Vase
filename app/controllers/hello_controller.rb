@@ -2,11 +2,19 @@ class HelloController < ApplicationController
     
     def link
     end
+    def link_en
+    end
     def log
+    end
+    def log_en
     end
     def post
     end
+    def post_en
+    end
     def my
+    end
+    def my_en
     end
     def article1
     end

@@ -1,0 +1,72 @@
+<%= link_to "back home", hello_index_path, class: 'btn btn-info' %>
+<section class="wrapper-a">
+    <div class="link-container">
+    <div class="container-a">
+        <div class="content-a">
+            <h2 class="heading-a">How to use vase</h2>
+            <div class="list-a">
+                <div class="list-item-a">This page describes how to use the vase. If you are new to this site, please refer to this page and create an account first.</div>
+                
+            </div>
+            
+        </div>
+    </div>
+    </div>
+</section>
+<div class="how-menu-container">
+<%= link_to "Top page", hello_link_en_path , :controller => "hello", :action => "link_en" ,class: 'btn btn-outline-danger' %>
+<%= link_to "New registration method", hello_log_en_path , :controller => "hello", :action => "log_en" ,class: 'btn btn-outline-danger' %>
+<%= link_to "View and do posts", hello_post_en_path , :controller => "hello", :action => "post_en" ,class: 'btn btn-outline-danger' %>
+<%= link_to "My page", hello_my_en_path , :controller => "hello", :action => "my_en" ,class: 'btn btn-outline-danger' %>
+</div>
+
+<div class="box27">
+    <span class="box-title">Top page</span>
+    Some functions of Vase are available on the top page.
+    <div class="how-to-container">
+        <div class="how-img-box">
+            <%= image_tag('about-vase.jpg', :size => '400x250') %>
+        </div>
+        <div class="how-script-box">
+        This page. We have carefully explained how to use it even if you are a beginner.
+            <br>
+            You can use Vase without registering as a member, but you can enjoy this service even more if you register.
+            Let's register as a member based on the explanation on this page.
+        </div>
+    </div>
+    <div class="how-to-container">
+        <div class="how-img-box">
+            <%= image_tag('article 2.jpg', :size => '400x250') %>
+        </div>
+        <div class="how-script-box">
+        You can read information articles about flowers that are regularly updated on this page.
+            <br>
+            If there are a lot of likes for your work, it may be introduced in the article...! ?
+            Let's start a wonderful flower life with flower information everywhere in this service even for inexperienced people ✿
+        </div>
+    </div>
+    <div class="how-to-container">
+        <div class="how-img-box">
+            <%= image_tag('seasonal2.jpg', :size => '400x250') %>
+        </div>
+        <div class="how-script-box">
+        Vase can tag and post the season of flowers when submitting a work.
+            <br>
+            Click on the Seasons icon in this section to see the submissions by season.
+            Let's see what kind of flowers there are in this season and what kind of decoration is best.
+            <%= image_tag('seasonal-show.jpg', :size => '200x100') %>
+        </div>
+    </div>
+    <div class="how-to-container">
+        <div class="how-img-box">
+            <%= image_tag('collection.jpg', :size => '400x250') %>
+        </div>
+        <div class="how-script-box">
+        Here you can see a list of other people's works.
+            <br>
+            *Login is required to see details.
+        </div>
+    </div>
+</div>
+
+

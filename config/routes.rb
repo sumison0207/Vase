@@ -10,6 +10,11 @@ Rails.application.routes.draw do
   get 'hello/post' => 'hello#post'
   get 'hello/my' => 'hello#my'
   get 'hello/article1' => 'hello#article1'
+  get 'hello/link_en' => 'hello#link_en'
+  get 'hello/log_en' => 'hello#log_en'
+  get 'hello/log_en' => 'hello#log_en'
+  get 'hello/post_en' => 'hello#post_en'
+  get 'hello/my_en' => 'hello#my_en'
 
   
 
@@ -19,4 +24,5 @@ Rails.application.routes.draw do
     resources :likes, only: [:create, :destroy]
     resources :comments, only: [:create]
   end
+  
 end

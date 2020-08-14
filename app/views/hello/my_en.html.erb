@@ -1,0 +1,21 @@
+<%= link_to "back home", hello_index_path, class: 'btn btn-info' %>
+<section class="wrapper-a">
+    <div class="link-container">
+    <div class="container-a">
+        <div class="content-a">
+            <h2 class="heading-a">How to use vase</h2>
+            <div class="list-a">
+                <div class="list-item-a">This page describes how to use the vase. If you are new to this site, please refer to this page and create an account first.</div>
+                
+            </div>
+            
+        </div>
+    </div>
+    </div>
+</section>
+<div class="how-menu-container">
+<%= link_to "Top page", hello_link_en_path , :controller => "hello", :action => "link_en" ,class: 'btn btn-outline-danger' %>
+<%= link_to "New registration method", hello_log_en_path , :controller => "hello", :action => "log_en" ,class: 'btn btn-outline-danger' %>
+<%= link_to "View and do posts", hello_post_en_path , :controller => "hello", :action => "post_en" ,class: 'btn btn-outline-danger' %>
+<%= link_to "My page", hello_my_en_path , :controller => "hello", :action => "my_en" ,class: 'btn btn-outline-danger' %>
+</div>

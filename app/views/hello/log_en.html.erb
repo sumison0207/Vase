@@ -1,0 +1,48 @@
+<%= link_to "back home", hello_index_path, class: 'btn btn-info' %>
+<section class="wrapper-a">
+    <div class="link-container">
+    <div class="container-a">
+        <div class="content-a">
+            <h2 class="heading-a">How to use vase</h2>
+            <div class="list-a">
+                <div class="list-item-a">This page describes how to use the vase. If you are new to this site, please refer to this page and create an account first.</div>
+                
+            </div>
+            
+        </div>
+    </div>
+    </div>
+</section>
+<div class="how-menu-container">
+<%= link_to "Top page", hello_link_en_path , :controller => "hello", :action => "link_en" ,class: 'btn btn-outline-danger' %>
+<%= link_to "New registration method", hello_log_en_path , :controller => "hello", :action => "log_en" ,class: 'btn btn-outline-danger' %>
+<%= link_to "View and do posts", hello_post_en_path , :controller => "hello", :action => "post_en" ,class: 'btn btn-outline-danger' %>
+<%= link_to "My page", hello_my_en_path , :controller => "hello", :action => "my_en" ,class: 'btn btn-outline-danger' %>
+</div>
+<div class="box27">
+    <span class="box-title">New registration method</span>
+    I will explain how to register as a member.
+    <div class="how-to-container">
+        <div class="how-img-box">
+            <%= image_tag('sign-up.PNG', :size => '400x250') %>
+        </div>
+        <div class="how-script-box">
+        Please click "Register now" on the top page.
+            <br>
+            * Please log in using the login button above after making a new registration.
+            
+        </div>
+    </div>
+    <div class="how-to-container">
+        <div class="how-img-box">
+            <%= image_tag('sign-up-show.PNG', :size => '400x250') %>
+        </div>
+        <div class="how-script-box">
+        Click "Register for new member" to display the input form for required items.
+            <br>
+            Enter the name you want to register (will be disclosed to other users), email address, password (will not be disclosed to other users) in order, and click “Sign up” to complete.
+            
+        </div>
+    </div>
+    
+</div>
