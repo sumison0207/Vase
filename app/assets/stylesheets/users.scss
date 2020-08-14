@@ -18,7 +18,7 @@
 .my-container{
     box-shadow: 0 10px 10px #666666;
     margin: 50px auto;
-	width: 70%;
+	width: 90%;
 	border: solid darkcyan;
 	border-radius: 10px;
     flex-direction: row;
@@ -26,6 +26,7 @@
 .me-box{
     display: flex;
     padding: 30px;
+    justify-content: center;
 }
 
 h2{
@@ -44,14 +45,16 @@ h2{
         top: 127px;
         
         
+        
     }
 }
 
 .name-box{
-    width: 66px;
-    height: 40px;
-    left: 286px;
-    top: 267px;
+    display: flex;
+    font-size: 50px;
+}
+.name-box p{
+    font-size: 40px;
 }
 
 .profile-box{
@@ -59,7 +62,19 @@ h2{
     padding: 10px;
     
 }
+.profile-box a{
+    font-size: 25px;
+}
 .user-post-box{
     display: flex;
-    text-align: center;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-around;
+	text-align: center;
+	width: 100%;
+	
+	
+}
+.edit-box{
+    padding-top: 75px;
 }
