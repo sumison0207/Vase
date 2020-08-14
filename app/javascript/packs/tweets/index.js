@@ -19,3 +19,9 @@ https://github.com/ahmedbeheiry/fancy-buttons
 // Linkedin: https://eg.linkedin.com/in/ahmedbeheiry
 
 /********** Thanks for being here **********/
+/* Demo purposes only */
+$(".hover").mouseleave(
+  function () {
+    $(this).removeClass("hover");
+  }
+);

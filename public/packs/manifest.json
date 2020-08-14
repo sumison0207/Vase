@@ -12,13 +12,13 @@
     },
     "tweets\\index": {
       "js": [
-        "/packs/js/tweets/index-d17a25e8462c3ba8c8b9.js"
+        "/packs/js/tweets/index-050eab7f21dfc5567c21.js"
       ],
       "js.map": [
-        "/packs/js/tweets/index-d17a25e8462c3ba8c8b9.js.map"
+        "/packs/js/tweets/index-050eab7f21dfc5567c21.js.map"
       ]
     }
   },
-  "tweets/index.js": "/packs/js/tweets/index-d17a25e8462c3ba8c8b9.js",
-  "tweets/index.js.map": "/packs/js/tweets/index-d17a25e8462c3ba8c8b9.js.map"
+  "tweets/index.js": "/packs/js/tweets/index-050eab7f21dfc5567c21.js",
+  "tweets/index.js.map": "/packs/js/tweets/index-050eab7f21dfc5567c21.js.map"
 }

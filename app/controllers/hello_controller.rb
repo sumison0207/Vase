@@ -8,14 +8,16 @@ class HelloController < ApplicationController
     end
     def my
     end
+    def article1
+    end
     def index
         
 
         
         if params[:search] == nil
-        @tweets= Tweet.all.page(params[:page]).per(3)
+        @tweets= Tweet.all.page(params[:page]).per(6)
         elsif params[:search] == ''
-        @tweets= Tweet.all.page(params[:page]).per(3)
+        @tweets= Tweet.all.page(params[:page]).per(6)
         else
         #部分検索
         @tweets = Tweet.where("body LIKE ? ",'%' + params[:search] + '%').page(params[:page]).per(3)

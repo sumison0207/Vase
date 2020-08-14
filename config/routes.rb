@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   get 'hello/log' => 'hello#log'
   get 'hello/post' => 'hello#post'
   get 'hello/my' => 'hello#my'
+  get 'hello/article1' => 'hello#article1'
 
   
 

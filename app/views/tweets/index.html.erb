@@ -69,42 +69,55 @@
     <div id="page-box">
       <%= page_entries_info @tweets %>
     </div>
+      <hr class="cp_hr07" />
   
       <% @tweets.each do |t| %>
   
         <div class="tweet">
+        
+            <div class="tweet-user-name-box">
             <a href="/users/<%= t.user.id %>"><%= t.user.name %></a>
-            <br>
+            </div>
             <div class="tweet-image-box">
               <% if t.image.present? %>
               <%= link_to tweet_path(t.id) do %>
-                <%= image_tag t.image_url, size: '300x200'  %>
+                <%= image_tag t.image_url, size: '400x300'  %>
               <% end %>
               <% else %>
               <%= link_to tweet_path(t.id) do %>
-                <img src="/images/default.jpg" width="200px" height="200px">
+                <img src="/images/default.jpg" width="400px" height="300px">
               <% end %>
               <% end %> 
-            </div>
-            <div class="tweet-title-box">
+              <figcaption>
+              <div class="tweet-title-box">
               <% if t.title.present? %>
               <%= t.title %>
               <% else %>
               <a>タイトルなし</a>
               <% end %>
-            </div>
-            <div class="tweet-info-item">
+              </div>
+              <div class="tweet-info-item">
               ✿<%= t.liked_users.count %>
-              <%= link_to "詳細へ", tweet_path(t.id) ,class: 'btn btn-info'%>
+              <%= link_to "詳細へ", tweet_path(t.id) ,class: 'btn btn-outline-danger'%>
               <% if t.user.id == current_user.id %>
-              <%= link_to "編集", edit_tweet_path(t.id) , class: 'btn btn-info' %>
-              <%= button_to "削除", tweet_path(t.id), method: :delete , class: 'btn btn-info' %>
+              <%= link_to "編集", edit_tweet_path(t.id) , class: 'btn btn-outline-danger' %>
+              <%= button_to "削除", tweet_path(t.id), method: :delete , class: 'btn btn-outline-danger' %>
               <% end %>
             </div>
+            </figcaption>
+
+              
+              
+            </div>
+            
+            
         </div>
+       
       <% end %>
+      
   </div>
 </div>
+<hr class="cp_hr07" />
 <div id="page-box">
 <%= paginate @tweets %>
 </div>

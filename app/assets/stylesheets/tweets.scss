@@ -333,7 +333,8 @@ h2{
 	justify-content: space-around;
 	text-align: center;
 	width: 100vw;
-	height: 855px;
+	height: 1250px;
+	background-color: #FAF8F5;
 }
 
 #page-box{
@@ -345,33 +346,18 @@ h2{
 }
 .tweet{
 	text-align: center;
-	margin: 10px;
-	
+	display: flex;
 	width: 30%;
-	margin:2em 0;
+	margin-right: auto;
+	margin-left: auto;
     position: relative;
-    padding: 0.25em 1em;
-    border: solid 2px black;
-    border-radius: 3px 0 3px 0;
+	padding: 0.25em 1em;
+	align-items: center;
+	justify-content: center;
+    
 }
 
-.tweet:before,.tweet:after
-{
-    content: '';
-    position: absolute;
-    width:10px;
-    height: 10px;
-    border: solid 2px black;
-    border-radius: 50%;
-}
-.tweet:after {
-    top:-12px;
-    left:-12px;
-}
-.tweet:before {
-    bottom:-12px;
-    right:-12px;
-}
+
 .tweet p {
     margin: 0; 
     padding: 0;
@@ -558,4 +544,144 @@ h2{
   opacity       : 0.8;         /* カーソル時透明度 */
   }
 
+  .cp_hr07 {
+	position: relative;
+	overflow: visible;
+	text-align: center;
+	color: #f06292;
+	border-width: 3px 0 0 0;
+	border-style: double;
+	border-color: #f06292;
+}
+.cp_hr07::after {
+	position: absolute;
+	top: -0.7em;
+	left: 50%;
+	display: inline-block;
+	content: '❁';
+	background: #ffffff;
+}
 
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,700);
+@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+.tweet-image-box {
+  font-family: 'Raleway', Arial, sans-serif;
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+  min-width: 230px;
+  max-width: 315px;
+  width: 100%;
+  color: #ffffff;
+  text-align: left;
+  font-size: 16px;
+  background-color: #000000;
+  display: flex;
+}
+.tweet-image-box * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+}
+.tweet-image-box img {
+  max-width: 100%;
+  backface-visibility: hidden;
+  vertical-align: top;
+}
+.tweet-image-box:after,
+.tweet-image-box figcaption {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.tweet-image-box:after {
+  content: '';
+  background-color: rgba(0, 0, 0, 0.65);
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+  opacity: 0;
+}
+.tweet-image-box figcaption {
+  z-index: 1;
+  padding: 40px;
+  margin-right: 50;
+  margin-left: 50;
+}
+.tweet-image-box .tweet-title-box,
+.tweet-image-box .tweet-info-item {
+  width: 100%;
+  margin: 5px 0;
+  padding: 0;
+}
+.tweet-image-box .tweet-title-box {
+  line-height: 1.1em;
+  font-weight: 700;
+  font-size: 1.4em;
+  text-transform: uppercase;
+  opacity: 0;
+}
+
+.tweet-image-box .tweet-info-item {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 34px;
+  opacity: 0;
+  -webkit-transform: translateX(-10px);
+  transform: translateX(-10px);
+  display: flex;
+	justify-content: center;
+	padding: 20px;
+	text-align: center;
+	align-items: center;
+}
+.tweet-image-box .tweet-info-item {
+  position: absolute;
+  
+  left: 10;
+  right: -10;
+  z-index: 1;
+  padding: 0px;
+}
+.tweet-image-box:hover img,
+.tweet-image-box.hover img {
+  zoom: 1;
+  filter: alpha(opacity=50);
+  -webkit-opacity: 0.5;
+  opacity: 0.5;
+}
+.tweet-image-box:hover:after,
+.tweet-image-box.hover:after {
+  opacity: 1;
+  position: absolute;
+  top: 10px;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+}
+.tweet-image-box:hover .tweet-title-box,
+.tweet-image-box.hover .tweet-title-box,
+
+.tweet-image-box:hover .tweet-info-item,
+.tweet-image-box.hover .tweet-info-item {
+  -webkit-transform: translate(0px, 0px);
+  transform: translate(0px, 0px);
+  opacity: 1;
+}
+.tweet-user-name-box{
+	color: #505050;/*文字色*/
+  padding: 0.5em;/*文字周りの余白*/
+  display: inline-block;/*おまじない*/
+  line-height: 1.3;/*行高*/
+  background: #dbebf8;/*背景色*/
+  vertical-align: middle;
+  border-radius: 25px 0px 0px 25px;/*左側の角を丸く*/
+}
+.tweet-user-name-box:before {
+	content: '●';
+	color: white;
+	margin-right: 8px;
+  }

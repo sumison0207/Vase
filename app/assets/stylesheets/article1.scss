@@ -1,0 +1,26 @@
+h1 {
+    position: relative;
+    padding: 0.5em;
+    background: #a6d3c8;
+    color: white;
+    margin-top: 20px;
+  }
+  
+  h1::before {
+    position: absolute;
+    content: '';
+    top: 100%;
+    left: 0;
+    border: none;
+    border-bottom: solid 15px transparent;
+    border-right: solid 20px rgb(149, 158, 155);
+  }
+.article-main-container{
+    display: flex;
+    justify-content: center;
+    margin: 50px auto;
+	width: 85%;
+	border: solid darkcyan;
+    border-radius: 10px;
+    text-align: center;
+}
