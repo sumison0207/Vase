@@ -71,10 +71,7 @@
               <div class="tweet-info-item">
               ✿<%= t.liked_users.count %>
               <%= link_to "詳細へ", tweet_path(t.id) ,class: 'btn btn-outline-danger'%>
-              <% if t.user.id == current_user.id %>
-              <%= link_to "編集", edit_tweet_path(t.id) , class: 'btn btn-outline-danger' %>
-              <%= button_to "削除", tweet_path(t.id), method: :delete , class: 'btn btn-outline-danger' %>
-              <% end %>
+              
             </div>
             </figcaption>
 
