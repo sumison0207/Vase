@@ -19,3 +19,27 @@
 <%= link_to "View and do posts", hello_post_en_path , :controller => "hello", :action => "post_en" ,class: 'btn btn-outline-danger' %>
 <%= link_to "My page", hello_my_en_path , :controller => "hello", :action => "my_en" ,class: 'btn btn-outline-danger' %>
 </div>
+<div class="box27">
+    <span class="box-title">Mypage</span>
+    I will explain my page.
+    <div class="how-to-container">
+        <div class="how-img-box">
+            <%= image_tag('mypage-1.jpg', :size => '400x250') %>
+        </div>
+        <div class="how-script-box">
+        You can move from "My page" on the top page.
+            <br>
+            Click the edit button to change the name. You can set your profile picture and self-introduction. You can also see the list of user posts by scrolling.
+            
+        </div>
+    </div>
+    <div class="how-to-container">
+        <div class="how-img-box">
+            <%= image_tag('mypage.png', :size => '400x250') %>
+        </div>
+        <div class="how-script-box">
+        You can jump to other user pages by clicking the name in the post list.
+            
+        </div>
+    </div>
+</div>
