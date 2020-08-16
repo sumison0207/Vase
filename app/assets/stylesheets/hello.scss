@@ -5,28 +5,44 @@
     padding: 0;
     margin: 0;
   }
-  
   .top_image-container{
-      background-image: url(top-image.jpg);
-      background-size: cover;
-      
-      width:100%;
-      max-width: 100%;
-      height: auto;
-     
-       
-  }
-  .mobile-top-image-container{
-    display:none;
-  }
-  @media screen and (min-width:480px) { 
-    .top_image-container { display:none;}
-    .mobile-top-image-container { display:inline;}
+	background-image: url(top-image.jpg);
+    background-size: cover;
+    
+    height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    img{
+        max-width: 100%;
+    }
+	 
 }
- .top-container{
-     margin-top: 500px;
 
- }
+.sub-container{
+	width: 1258px;
+	height: 192px;
+	left: 0px;
+	top: 193px;
+	  margin-left: 180px;
+	  margin-top: 10px;
+	
+	background:rgba(236, 250, 244, 0.49);
+}
+
+p{
+	font-family: serif;
+	font-size: 80px;
+	display: table-cell;
+  	vertical-align: middle;
+	text-align: center;
+	justify-content: center;
+	
+}
+
+  
+ 
   .sub-container{
       width: 1258px;
       height: 192px;
@@ -49,7 +65,11 @@
       text-align: center;
      
   }
-  
+  .top-container{
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 400px;
+  }
   .scroll{
       height: 150px;
       color: black;
@@ -202,32 +222,20 @@
       margin-top: 5px;
       background-image: url(reef_1.png);
       opacity: 0.5;
-      width:100%;
-      max-width: 100%;
-      height: auto;
     }
      
     .bg02 {
       background-image: url(white_1.png);
       opacity: 0.5;
-      width:100%;
-      max-width: 100%;
-      height: auto;
     }
   
     .bg03 {
       background-image: url(reef2.png);
       opacity: 0.5;
-      width:100%;
-      max-width: 100%;
-      height: auto;
     }
     .bg04{
       background-image: url(himawari.png);
       opacity: 0.5;
-      width:100%;
-      max-width: 100%;
-      height: auto;
     }
   
   .bg-color04{
@@ -235,6 +243,9 @@
       flex-wrap: wrap;
       flex-direction: row;
       text-align: center;
+      flex-wrap: wrap;
+  padding: 10px;
+  margin: 0 0 10px;
   }
  
 
@@ -248,7 +259,11 @@
   .tweet{
       text-align: center;
       margin: 10px;
-      
+      padding: 20px;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 400px;
+    margin: 10px;
       
   }
   .tweet-image-box{
@@ -266,8 +281,12 @@
   }
 .season-container{
     display: flex;
-    justify-content: center;
+    
     margin-top: 50px;
+    
+  flex-wrap: wrap;
+  padding: 10px;
+  margin: 0 0 10px;
 }
 
 .spring-box{
@@ -283,6 +302,11 @@
     }
     margin-left: 5px;
     margin-right: 5px;
+    padding: 20px;
+  flex-grow: 1;
+    flex-shrink: 0;
+    
+  
 }   
 .spring-box:hover {
     img{
@@ -309,6 +333,11 @@
     }
     margin-left: 5px;
     margin-right: 5px;
+    padding: 20px;
+  flex-grow: 1;
+    flex-shrink: 0;
+   
+  
 }
 .summer-box:hover img{
     transform: scale(1.2);
@@ -328,6 +357,11 @@
     }
     margin-left: 5px;
     margin-right: 5px;
+    padding: 20px;
+  flex-grow: 1;
+    flex-shrink: 0;
+    
+  
 }
 .autumn-box:hover img{
     transform: scale(1.2);
@@ -347,6 +381,10 @@
     }
     margin-left: 5px;
     margin-right: 5px;
+    padding: 20px;
+  flex-grow: 1;
+    flex-shrink: 0;
+    
 }
 .winter-box:hover img{
     transform: scale(1.2);
