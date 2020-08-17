@@ -86,7 +86,7 @@
 .how-img-box{
     
     height: 300px;
-    width: 400px;
+    width: 100%;
 }
 .how-script-box{
     margin-top: 10px;
@@ -102,7 +102,7 @@
 }
 @media only screen and (max-width: 767px){
     .how-img-box img{
-     
+    width: 100%;
       height: auto;
     }
   }
