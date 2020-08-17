@@ -6,15 +6,14 @@
     margin: 0;
   }
   .top_image-container{
-	background-image: url(top-image.jpg);
-    background-size: cover;
+	
     
     height: 800px;
     display: flex;
     align-items: center;
     justify-content: center;
     z-index: 1;
-    
+    width: 100%;
     flex-wrap: wrap;
     padding: 10px;
     margin: 0 0 10px;
@@ -23,6 +22,20 @@
     }
 	 
 }
+@media only screen and (max-width: 767px){
+    .top_image-container img{
+      width: 100%;
+      height: auto;
+    }
+  }
+  /* pc　768px以上 */
+  @media only screen and (min-width: 768px), print {
+    .top_image-container img{
+      width: 1000px;
+      height: auto;
+    }
+  }
+  
 
 .sub-container{
 	width: 1258px;
@@ -238,24 +251,42 @@ p{
       justify-content: center;
   }
   
+  @media only screen and (max-width: 767px){
+    .bg01{
+      width: 100%;
+      height: auto;
+    }
+  }
+  /* pc　768px以上 */
+  @media only screen and (min-width: 768px), print {
+    .bg01{
+      width: 1000px;
+      height: auto;
+    }
+  }
+  
     .bg01 {
       margin-top: 5px;
       background-image: url(reef_1.png);
       opacity: 0.5;
+      width: 100%;
     }
      
     .bg02 {
       background-image: url(white_1.png);
       opacity: 0.5;
+      width: 100%;
     }
   
     .bg03 {
       background-image: url(reef2.png);
       opacity: 0.5;
+      width: 100%;
     }
     .bg04{
       background-image: url(himawari.png);
       opacity: 0.5;
+      width: 100%;
     }
   
   .bg-color04{
