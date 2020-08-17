@@ -23,12 +23,12 @@ class HelloController < ApplicationController
 
         
         if params[:search] == nil
-        @tweets= Tweet.all.page(params[:page]).per(6)
+        @tweets= Tweet.all.order(created_at: "DESC").page(params[:page]).per(6)
         elsif params[:search] == ''
-        @tweets= Tweet.all.page(params[:page]).per(6)
+        @tweets= Tweet.all.order(created_at: "DESC").page(params[:page]).per(6)
         else
         #部分検索
-        @tweets = Tweet.where("body LIKE ? ",'%' + params[:search] + '%').page(params[:page]).per(3)
+        @tweets = Tweet.where("body LIKE ? ",'%' + params[:search] + '%').order(created_at: "DESC").page(params[:page]).per(3)
         end
         
     
