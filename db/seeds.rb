@@ -11,3 +11,4 @@ Tag.create([
     { name: '秋'},
     { name: '冬'},
     ])
+

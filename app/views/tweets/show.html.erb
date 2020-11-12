@@ -51,6 +51,7 @@
     <div class="like-show-box">
       <a>いいねしたユーザー</a>
       <% @tweet.liked_users.each do |user| %>
+        <%= link_to "page", user_path(user.id), class: 'btn btn-info' %>
       <li><%= user.name %></li>
       <% end %>
     </div>

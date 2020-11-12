@@ -9,6 +9,15 @@
           <span class="input-group-btn">
               <%= button_tag "検索", :name => nil, class: "btn btn-info" %>
           </span>
+          <%= form_tag tweets_path, method: :get, class: 'boards__searchForm' do %>
+            <%= select_tag :tag_id,
+                           options_from_collection_for_select(Tag.all, :id, :name, params[:tag_id]),
+                           {
+                             prompt: 'タグで絞り込み検索',
+                             onchange: 'submit(this.form);'
+                           }
+            %>
+          <% end %>
           </div>
         <% end %>
       </div>
@@ -67,7 +76,7 @@
   <div class="scroll-bg bg-color04">
           
     <div id="page-box">
-      <%= page_entries_info @tweets %>
+      
     </div>
       <hr class="cp_hr07" />
   
@@ -92,6 +101,9 @@
               <div class="tweet-title-box">
               <% if t.title.present? %>
               <%= t.title %>
+              <% t.tags.each do |tag| %>
+                <%= tag.name %>
+              <% end %>    
               <% else %>
               <a>タイトルなし</a>
               <% end %>
@@ -119,7 +131,7 @@
 </div>
 <hr class="cp_hr07" />
 <div id="page-box">
-<%= paginate @tweets %>
+
 </div>
 
 

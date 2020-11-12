@@ -11,6 +11,10 @@
           #部分検索
           @tweets = Tweet.where("body LIKE ? ",'%' + params[:search] + '%').order(created_at: "DESC").page(params[:page]).per(3)
           end
+          @tweets = params[:tag_id].present? ? Tag.find(params[:tag_id]).tweets : Tweet.all
+          @q = Tweet.ransack(params[:q])
+          @tweets = @q.result(distinct: true)
+          
         end
   
         
